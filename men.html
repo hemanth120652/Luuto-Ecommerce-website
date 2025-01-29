@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Clothes</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="men.css">
+    
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+    <header>
+        <h1>Men's Collection</h1>
+        <!-- Cart Button with item count -->
+        <button id="cartButton" onclick="toggleCartModal()">
+            <i class="fas fa-shopping-cart"></i> Cart
+            <span id="cartItemCount" class="cart-count">0</span> <!-- Cart count -->
+        </button>
+    </header>
+
+
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Your Cart</h2>
+            <div id="cartItemsContainer"></div>
+            <button id="closeCartModal" onclick="document.getElementById('cartModal').style.display='none'">Close</button>
+        </div>
+    </div>
+    
+
+
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="success-popup">
+        <p>Item Added Successfully!</p>
+    </div>
+
+    <section class="products-section">
+        <div id="products-container">
+            <!-- Products will be loaded dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Link to external JS file -->
+    <script src="men.js"></script>
+</body>
+</html>
